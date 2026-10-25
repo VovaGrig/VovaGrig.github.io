@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vladimir Grigoriants</title>
+<meta name="description" content="Vladimir Grigoriants — bioinformatician, computational immunology. Contacts and CV.">
+<style>
+  :root { --bg: #ffffff; --fg: #1d2430; --muted: #5b6573; --accent: #1f4e79; --rule: #dde3ea; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #12161c; --fg: #e6e9ee; --muted: #9aa4b2; --accent: #8cb8e8; --rule: #2a313b; }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--fg); }
+  body { font: 16px/1.55 -apple-system, "Segoe UI", Lato, "Helvetica Neue", Arial, sans-serif;
+    min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 32px 16px; }
+  main { width: 100%; max-width: 520px; }
+  .top { display: flex; gap: 20px; align-items: center; }
+  img { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; object-position: 50% 25%; flex: none; }
+  h1 { font-size: 1.6rem; margin: 0; letter-spacing: .2px; }
+  .role { color: var(--muted); margin-top: 2px; }
+  p { margin: 20px 0 0; }
+  ul { list-style: none; padding: 0; margin: 24px 0 0; border-top: 1px solid var(--rule); }
+  li { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--rule); }
+  li span { color: var(--muted); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .cv { display: inline-block; margin-top: 24px; padding: 10px 18px; border: 1px solid var(--accent);
+    border-radius: 6px; font-weight: 600; }
+  .cv:hover { background: var(--accent); color: var(--bg); text-decoration: none; }
+  @media (max-width: 420px) { .top { flex-direction: column; align-items: flex-start; } li { flex-direction: column; gap: 0; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="top">
+    <img src="photo.jpg" alt="Vladimir Grigoriants">
+    <div>
+      <h1>Vladimir Grigoriants</h1>
+      <div class="role">Bioinformatician · computational immunology</div>
+    </div>
+  </div>
+  <p>I analyse TCR-repertoire, bulk and single-cell RNA-seq data, from raw reads to publication-ready results. PhD student at Skoltech; data analyst in D.M. Chudakov's lab, Pirogov Russian National Research Medical University, Moscow.</p>
+  <ul>
+    <li><span>Email</span><a href="mailto:vova.grig2002@gmail.com">vova.grig2002@gmail.com</a></li>
+    <li><span>Location</span>Moscow</li>
+  </ul>
+  <a class="cv" href="Grigoriants_CV.pdf">Full CV (PDF)</a>
+</main>
+</body>
+</html>
